@@ -12,7 +12,7 @@ public class Producer {
   private KafkaTemplate<String, String> kafkaTemp;
   
   public void publishToTopic(String message) {
-	  System.out.println("Publishing to topid "+topic);
+	  System.out.println("Publishing to topic "+topic);
 	  this.kafkaTemp.send(topic, message);
   }
 }
